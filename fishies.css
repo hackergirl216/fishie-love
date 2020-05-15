@@ -1,0 +1,126 @@
+            @charset "UTF-8";
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Verdana;
+                color: #7a7a7a;
+            }
+            
+            .top {
+                background-color: #d6edf3;
+                padding: 15px;
+                text-align: center;
+            }
+            
+            .menu {
+                float: left;
+                width: 20%;
+                text-align: center;
+            }
+            
+            .menu a {
+                background-color: #d6edf3;
+                padding: 8px;
+                margin-top: 7px;
+                display: block;
+                width: 100%;
+                color: #7e7e7e;
+            }
+            
+            .main {
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+            }
+            
+            .right {
+                background-color: #d6edf3;
+                float: left;
+                width: 20%;
+                padding: 15px;
+                margin-top: 7px;
+                text-align: center;
+            }
+            
+            .bottom {
+                background-color: #d6edf3;
+                text-align: center;
+                padding: 10px;
+                margin-top: 7px;
+            }
+            
+            @media only screen and (max-width:620px) {
+                /* For mobile phones: */
+                .menu,
+                .main,
+                .right {
+                    width: 100%;
+                }
+            }
+            /* This is for the table*/
+            
+            table.center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            
+            th,
+            td {
+                padding: 7px;
+            }
+            /* This is for the spinning fish emojis */
+            
+            span.emojispin {
+                animation-name: spin-animation;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                transform-origin: 50% 50%;
+                display: inline-block;
+            }
+            
+            @keyframes spin-animation {
+                25% {
+                    transform: rotate( 90.0deg)
+                }
+                50% {
+                    transform: rotate( 180.0deg)
+                }
+                75% {
+                    transform: rotate( 270.0deg)
+                }
+                100% {
+                    transform: rotate( 360.0deg)
+                }
+            }
+            
+            span.emojispin-neg {
+                animation-name: spin-animation2;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                transform-origin: 50% 50%;
+                display: inline-block;
+            }
+            
+            @keyframes spin-animation2 {
+                25% {
+                    transform: rotate( -90.0deg)
+                }
+                50% {
+                    transform: rotate( -180.0deg)
+                }
+                75% {
+                    transform: rotate( -270.0deg)
+                }
+                100% {
+                    transform: rotate( -360.0deg)
+                }
+            }
